@@ -1,0 +1,617 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images\logo.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Phoenix Park Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Actor&display=swap" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="images\cafelogo.jpeg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                ABOUT
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                MENU
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                EVENT
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                RESERVATION
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button> -->
+        </div>
+    </header>
+</head>
+
+<body>
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+    <section id="hero-1619">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">
+                    <svg class="cs-chevron" width="49" height="15" viewBox="0 0 49 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.7">
+                        <path d="M0.621948 7.49889L6.40262 15L10.343 15L4.56231 7.49889L10.343 -4.2492e-07L6.40262 -2.52681e-07L0.621948 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M7.62195 7.49889L13.4026 15L17.343 15L11.5623 7.49889L17.343 -4.2492e-07L13.4026 -2.52681e-07L7.62195 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M14.7789 7.49889L20.5596 15L24.5 15L18.7193 7.49889L24.5 -4.2492e-07L20.5596 -2.52681e-07L14.7789 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M22.7789 7.49889L28.5596 15L32.5 15L26.7193 7.49889L32.5 -4.2492e-07L28.5596 -2.52681e-07L22.7789 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M30.7789 7.49889L36.5596 15L40.5 15L34.7193 7.49889L40.5 -4.2492e-07L36.5596 -2.52681e-07L30.7789 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M38.7789 7.49889L44.5596 15L48.5 15L42.7193 7.49889L48.5 -4.2492e-07L44.5596 -2.52681e-07L38.7789 7.49889Z" fill="var(--chevronColor)"/>
+                        </g>
+                    </svg>
+                    Host Your Next Event At Phoenix Park Cafe
+                    <svg class="cs-chevron" width="49" height="15" viewBox="0 0 49 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.7">
+                        <path d="M48.3781 7.49889L42.5974 15L38.657 15L44.4377 7.49889L38.657 -4.2492e-07L42.5974 -2.52681e-07L48.3781 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M41.3781 7.49889L35.5974 15L31.657 15L37.4377 7.49889L31.657 -4.2492e-07L35.5974 -2.52681e-07L41.3781 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M34.2211 7.49889L28.4404 15L24.5 15L30.2807 7.49889L24.5 -4.2492e-07L28.4404 -2.52681e-07L34.2211 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M26.2211 7.49889L20.4404 15L16.5 15L22.2807 7.49889L16.5 -4.2492e-07L20.4404 -2.52681e-07L26.2211 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M18.2211 7.49889L12.4404 15L8.50004 15L14.2807 7.49889L8.50004 -4.2492e-07L12.4404 -2.52681e-07L18.2211 7.49889Z" fill="var(--chevronColor)"/>
+                        <path d="M10.2211 7.49889L4.4404 15L0.500041 15L6.28071 7.49889L0.500042 -4.2492e-07L4.4404 -2.52681e-07L10.2211 7.49889Z" fill="var(--chevronColor)"/>
+                        </g>
+                    </svg>
+                </span>
+                <h1 class="cs-title">Explore Our Versatile Spaces make events memorable with custom menus and dedicated service</h1>
+                <a href="" class="cs-button-solid">Event Contact</a>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">Our Cafe</h3>
+                    <p class="cs-item-text">
+                        Nestled in Malvern East, a cozy retreat for coffee lovers and food enthusiasts alike.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/speedometer.svg" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">Quality Passion</h3>
+                    <p class="cs-item-text">
+                        Fine coffee and delicious food since 2004 in a welcoming space celebrating community and culture.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">Menu Offering</h3>
+                    <p class="cs-item-text">
+                        Explore a world of flavours with our extensive menu, from classic espresso to unique dishes.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">Customer Review</h3>
+                    <p class="cs-item-text">
+                        Rated 4.7 stars, guests love our cafe's ambiance and the consistently friendly service provided.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="images\rr-abrot-pNIgH0y3upM-unsplash.jpg">
+            <source media="(min-width: 601px)" srcset="images\rr-abrot-pNIgH0y3upM-unsplash.jpg">
+            <img decoding="async" src="images/rr-abrot-pNIgH0y3upM-unsplash.jpg" alt="meeting" width="1920" height="1080" aria-hidden="true">
+        </picture>
+    </section>
+                                    
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-49">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Story</span>
+                <h2 class="cs-title">Next Coffee Adventure Awaits At Phoenix Park Cafe!</h2>
+                <p class="cs-text">
+                    Our Cafe first opened its doors in 2004, quickly becoming a beloved local gathering place. Over the past decade, we have proudly served the community, offering a warm and welcoming atmosphere for all who visit. We strive to be a staple in the lives of our patrons, providing great food, drinks, and a friendly environment. Whether you are looking for a cozy spot to unwind alone or enjoy time with family and friends, our cafe has something for everyone.
+                </p>
+                <p class="cs-text">
+                    We boast a diverse menu that includes gourmet pastries and sandwiches, homemade soups and salads, and an assortment of sweet treats such as cakes and ice cream. We also offer a variety of drinks, from coffee and tea to beer, wine, and sparkling beverages. Our commitment to quality extends to our use of fresh, often organic ingredients to prepare every dish.
+                </p>
+            </div>
+            <ul class="cs-image-group">
+                <!-- Image 1 -->
+                <li class="cs-item cs-item-1">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/marcus-loke-8QRvzJGumSw-unsplash.jpg">
+                        <source media="(min-width: 601px)" srcset="images/marcus-loke-8QRvzJGumSw-unsplash.jpg">
+                        <img loading="lazy" decoding="async" src="images/marcus-loke-8QRvzJGumSw-unsplash.jpg" alt="Daily Bread Loaves" width="529" height="256">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <h3 class="cs-h3">Daily Bread Loaves</h3>
+                        <a class="cs-link" aria-label="Find out more" href="">
+                            Find out more
+                        </a>
+                    </div>
+                </li>
+                <!-- Image 2 -->
+                <li class="cs-item cs-item-2">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg">
+                        <source media="(min-width: 601px)" srcset="images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg">
+                        <img loading="lazy" decoding="async" src="images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="Gourmet French Toast with Fresh Berries and Banana" width="255" height="255">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <h3 class="cs-h3">Gourmet French Toast with Fresh Fruits</h3>
+                        <a class="cs-link" aria-label="Find out more" href="">
+                            Find out more
+                        </a>
+                    </div>
+                </li>
+                <!-- Image 3 -->
+                <li class="cs-item cs-item-3">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/prudence-earl-NM1eTOwEz7A-unsplash.jpg">
+                        <source media="(min-width: 601px)" srcset="images/prudence-earl-NM1eTOwEz7A-unsplash.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="images/prudence-earl-NM1eTOwEz7A-unsplash.jpg" alt="Floral and Fruity Gourmet Waffles" width="255" height="255">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <h3 class="cs-h3">Floral and Fruity Gourmet Waffles</h3>
+                        <a class="cs-link" aria-label="Find out more" href="">
+                            Find out more
+                        </a>
+                    </div>
+                </li>
+                <!-- Image 4 -->
+                <li class="cs-item cs-item-4">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/nathan-dumlao-6VhPY27jdps-unsplash.jpg">
+                        <source media="(min-width: 601px)" srcset="images/nathan-dumlao-6VhPY27jdps-unsplash.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="images/nathan-dumlao-6VhPY27jdps-unsplash.jpg" alt="Coffee Selection" width="255" height="255">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <h3 class="cs-h3">Coffee Selection</h3>
+                        <a class="cs-link" aria-label="Find out more" href="">
+                            Find out more
+                        </a>
+                    </div>
+                </li>
+                <!-- Image 5 -->
+                <li class="cs-item cs-item-5">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/chad-montano--GFCYhoRe48-unsplash.jpg">
+                        <source media="(min-width: 601px)" srcset="images/chad-montano--GFCYhoRe48-unsplash.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="images/chad-montano--GFCYhoRe48-unsplash.jpg" alt="Decadent Burger with Egg and Bacon" width="255" height="255">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <h3 class="cs-h3">Decadent Burger with Egg and Bacon</h3>
+                        <a class="cs-link" aria-label="Find out more" href="">
+                            Find out more
+                        </a>
+                    </div>
+                </li>
+                <!-- Image 6 -->
+                <li class="cs-item cs-item-6">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/masimo-grabar-NzHRSLhc6Cs-unsplash.jpg">
+                        <source media="(min-width: 601px)" srcset="images/masimo-grabar-NzHRSLhc6Cs-unsplash.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="images/masimo-grabar-NzHRSLhc6Cs-unsplash.jpg" alt="Rustic Olive and Egg Pizza Delight" width="255" height="530">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <h3 class="cs-h3">Rustic Olive and Egg Pizza Delight</h3>
+                        <a class="cs-link" aria-label="Find out more" href="">
+                            Find out more
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <a href="" class="cs-button-solid">Download Full Menu</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews-1672">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Customers</span>
+                <h2 class="cs-title">Rave Reviews Pour In for Our Beloved Phoenix Park Cafe!</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="images/jason-moyer-A73ah5JKtVA-unsplash.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Chiria Leozha
+                            <span class="cs-job">2 weeks ago</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">
+                            I loved the vibe of this cafe! Very thick fluffy gluten-free bread! Lovely presentation of the scrambled eggs which were creamy and big portion. 
+
+                            Would absolutely come back on a weekend where I have more time to sit back and enjoy.
+                        </p>
+                    </div>
+                    <!--Quote Icon-->
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="images/jeffrey-keenan-pUhxoSapPFA-unsplash.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Martin Kwok
+                            <span class="cs-job">3 weeks ago</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">
+                            Great food and atmosphere, a perfect brunch place. Everything we ordered was delicious, except the Ricotta pancakes were a lot bigger than expected.
+
+                            The place was clean but slightly hidden in an alley. Would recommend.
+                        </p>
+                    </div>
+                    <!--Quote Icon-->
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="images/ronny-sison-4lnzxFIgTmg-unsplash.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Michelle Warrener
+                            <span class="cs-job">a month ago</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">
+                            Was a beautiful day at the huge Phoenix Park & Cafe lots of things for the children to do and explore, accompanied by fantastic Coffee and some yummy food. 
+                            
+                            Definitely, a nice way to spend the afternoon.
+                        </p>
+                    </div>
+                    <!--Quote Icon-->
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+
+    <section id="faq-708">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="images/klara-kulikova-aoPTKjGo6u8-unsplash.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="images/klara-kulikova-aoPTKjGo6u8-unsplash.jpg">
+                <img loading="lazy" decoding="async" src="images/klara-kulikova-aoPTKjGo6u8-unsplash.jpg" alt="cafevibe" width="650" height="740" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Our Guides</span>
+                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Where is Phoenix Park Cafe located?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Phoenix Park Cafe is conveniently located in the heart of the Malvern East at 22-28 Rob Roy Rd, near the bustling Phoenix Park Community Centre. 
+                            You can find us just a few blocks from Chadstone Shopping Centre, making it an ideal spot for a relaxing meal after a stroll.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Are dogs allowed at Phoenix Park Cafe?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Yes, we love your furry friends! Dogs are welcome at our outdoor seating area. 
+                            Please keep them leashed and under control during your visit.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are the cafe's operating hours?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Phoenix Park Cafe is open Monday through Friday from 7:00 AM to 9:00 PM, and on weekends from 8:00 AM to 10:00 PM. 
+                            Join us for a meal, a quick snack, or a leisurely drink any day of the week.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Does Phoenix Park Cafe offer any vegan or gluten-free options?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Yes, we cater to all dietary needs. Our menu includes a variety of vegan and gluten-free dishes. 
+                            Please ask our staff for recommendations or check our menu online for specific dietary options.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Can I reserve a table or host an event at Phoenix Park Cafe?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Absolutely! We accept reservations for both small groups and large events. 
+                            To book a table or inquire about hosting an event, please call us at 0400 929 050 or visit our website to fill out an event booking form. 
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fswoosh.svg" alt="swoosh" width="361" height="487" aria-hidden="true">
+    </section>
+                                
+    <script>
+        const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+    </script>
+
+    <!-- ============================================ -->
+    <!--          Sign-up to our newsletter           -->
+    <!-- ============================================ -->
+
+    <section id="contact-1184">
+        <div class="cs-container">
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="images/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="images/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg">
+                <img loading="lazy" decoding="async" src="images/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg" alt="makecafe" width="637" height="726">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Our Connection</span>
+                <h2 class="cs-title">Sign-up to our newsletter</h2>
+                <!--Form-->
+                <form class="cs-form" id="cs-form-1184" name="Contact Form" method="post">
+                    <label class="cs-label">
+                        First Name
+                        <input class="cs-input" required type="text" id="name-1184" name="First Name" placeholder="First Name">
+                    </label>
+                    <label class="cs-label">
+                        Last Name
+                        <input class="cs-input" required type="text" id="name-1184" name="Last Name" placeholder="Last Name">
+                    </label>
+                    <label class="cs-label cs-email">
+                        Email
+                        <input class="cs-input" required type="email" id="email-1184" name="email" placeholder="Email">
+                    </label>
+                    <label class="cs-label cs-phone">
+                        Phone
+                        <input class="cs-input" required type="phone" id="phone-1184" name="phone" placeholder="Phone">
+                    </label>
+                    <label class="cs-label">
+                        Any Event You Interested In
+                        <textarea class="cs-input cs-textarea" required name="Message" id="message" placeholder=""></textarea>
+                    </label>
+                    <button class="cs-button-solid cs-submit" type="submit">Submit</button>
+                </form>
+            </div>
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="images/toa-heftiba-QnUywvDdI1o-unsplash.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="images/toa-heftiba-QnUywvDdI1o-unsplash.jpg">
+                <img loading="lazy" decoding="async" src="images/toa-heftiba-QnUywvDdI1o-unsplash.jpg" alt="cafefront" width="637" height="726">
+            </picture>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-710">
+        <div class="cs-container">
+            <!--Top Section-->
+            <div class="cs-top">
+                <!--Warpped logo in wrapper div so that div can be 100% width to force the lists below it to stay in their line.  The cs-logo can maintain its' max width. we didn't want it 100% width becuase then the blank area to the right of the logo will also result in a click and hover event. -->
+                <div class="cs-logo-wrapper">
+                    <a href="" class="cs-logo">
+                        <img src="images/footerlogo.png" alt="logo" aria-hidden="true" loading="lazy" decoding="async" width="300" height="80">
+                    </a>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <span class="cs-header">Quick Links</span>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Services</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Find us</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">FAQ</a>
+                    </li>
+                </ul>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <span class="cs-header">Quick Links</span>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Customer Reviews</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Menu and Offering</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Events and Catering</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Exclusive Use</a>
+                    </li>
+                </ul>
+                <ul class="cs-ul cs-contact-ul">
+                    <li class="cs-li">
+                        <span class="cs-header">Contact</span>
+                    </li>
+                    <li class="cs-li">
+                        <a href="tel:555-456 7899" class="cs-link">
+                            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                            (03) 9563 4587
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="mailto:info@example.com" class="cs-link">
+                            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fmail-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                            Debra.newlan@phoenixparkcafe.com.au
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link" target="_blank" rel="noopener">
+                            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpin-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                            22-28 Rob Roy Rd, Malvern East, VIC 3145 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Middle Section-->
+            <div class="cs-middle">
+                <!--Navigation-->
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <a href="" class="cs-nav-link">HOME</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a href="" class="cs-nav-link">ABOUT</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a href="" class="cs-nav-link">MENU</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a href="" class="cs-nav-link">EVENT</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a href="" class="cs-nav-link">RESERVATION</a>
+                    </li>
+                </ul>
+                <!--Social-->
+                <ul class="cs-social">
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="" target="_blank" rel="noopener">
+                            <!--Default Icon-->
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffacebook.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                            <!--On Hover Icon-->
+                            <img class="cs-social-icon cs-hover" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffacebook-green.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="" target="_blank" rel="noopener">
+                            <!--Default Icon-->
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ftwitter.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                            <!--On Hover Icon-->
+                            <img class="cs-social-icon cs-hover" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ftwitter-green.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="" target="_blank" rel="noopener">
+                            <!--Default Icon-->
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Finstagram.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                            <!--On Hover Icon-->
+                            <img class="cs-social-icon cs-hover" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Finstagram-green2.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="" target="_blank" rel="noopener">
+                            <!--Default Icon-->
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fyoutube.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                            <!--On Hover Icon-->
+                            <img class="cs-social-icon cs-hover" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fyoutube-green.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Bottom Section-->
+            <div class="cs-bottom">
+                <span class="cs-copyright">
+                    © Copyright 2024 - <a href="" class="cs-copyright-link" target="_blank" rel="noopener">Phoenix Park Cafe</a>
+                </span>
+            </div>
+        </div>
+        <!--SVG Waves-->
+        <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffooter-waves.svg" alt="waves" aria-hidden="true" loading="lazy" decoding="async" width="1920" height="616">
+    </footer>
+</body>
+</html>
+                                    
+                                        
